@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:padding="8dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Content"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"
+        android:layout_below="@id/editTextContent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonChooseAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Audio"
+        android:layout_below="@id/editTextContent"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/buttonChooseImage"
+        android:layout_toRightOf="@id/buttonChooseImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/buttonCaptureImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Image"
+        android:layout_below="@id/buttonChooseImage"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/imageViewSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/buttonCaptureImage"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Selected Image" />
+
+    <Button
+        android:id="@+id/buttonSaveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Note"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>

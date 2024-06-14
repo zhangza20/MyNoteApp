@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UserActivity">
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/profile_image"
+        android:src="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/buttonChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Choose Image" />
+
+    <EditText
+        android:id="@+id/editTextNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname" />
+
+    <EditText
+        android:id="@+id/editTextSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Signature" />
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password" />
+
+    <Button
+        android:id="@+id/buttonSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Profile" />
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+</LinearLayout>
